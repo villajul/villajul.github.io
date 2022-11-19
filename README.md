@@ -1,3 +1,6 @@
+# Portfolio
+Este es un proyecto personal para contar mas sobre mi y lo que puedo ofrecer como Full Stack Developer.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
