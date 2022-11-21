@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0 ;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root{
+  --color-background: #1f1f38;
+  --color-backgroud-var:#2c2c6c;
+  --color-primary:#4db5ff;
+  --color-primary-var:rgba(77,181,255, .4);
+  --color-white:#fff;
+  --color-light:rgba(255,255,255, .6);
+
+  --container-whidth: 80%;
+  --container-whidth-md: 86%;
+  --container-whidth-ms: 90%;
+  --transition: all 400ms ease;
+}
+
+body {
+  background-image: url("./assets/R.jpg");
+  background-size: cover;
+ 
+  font-family: 'Comic Neue', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--color-white);
+  line-height: 1.7;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* =================== Estilos Generales ================= */
+
+.container{
+  width: var(--container-whidth);
+  margin: 0 auto;
+  border: 1px solid var(--color-primary);
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: 500;
+}
+h1{
+  font-size: 2.5rem;
+}
+section{
+margin-top: 8rem;
+height: 100vh;
+}
+
+section > h2, section > h5{
+  text-align: center;
+  color: var(--color-light);
+}
+
+section > h2{
+  color: var(--color-primary-var);
+  margin-bottom: 3rem;
+}
+
+.text-light{
+  color: var(--color-light);
+}
+
+a{
+  color: var(--color-primary-var);
+  transition:var(--transition) ;
+}
+
+a:hover{
+color: var(--color-white);
+}
+
+.btn{
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem ;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-background);
+  border: transparent;
+}
+
+.btn-primary{
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+/* img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+} */
+ /* ================= responsiv ================= */
+@media screen and(max-width: 1024px){
+  .container{
+    width: var(--container-whidth-md);
+  }
+  section{
+    margin-top: 6rem;
+  }
+}
+@media screen and(max-width: 600px){
+  .container{
+    width: var(--container-whidth-sm);
+  }
+  section > h2{
+    margin-bottom: 2rem;
+  }
+}
