@@ -1,8 +1,23 @@
-import React from "react";
+import React, {useRef} from "react";
+import emailjs from 'emailjs-com'
 import "./Contact.css";
 import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_c8oxpbb', 'template_qxz1xu4', form.current, '51QetQY_ta9BD2aOL')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <section id="contact">
       <h5>Get in touch</h5>
@@ -25,15 +40,14 @@ const Contact = () => {
           </article>
         </div>
         <div>
-          <form action="">
-            <input type="text" placeholder="Your full name" required />
-            <input type="email" placeholder="Your e-mail" required />
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name='name' placeholder="Your full name" required />
+            <input type="email" name='email' placeholder="Your e-mail" required />
             <textarea
+            name='message'
               placeholder="Your message"
-              type="text"
-              className="input_area"
-              cols="80"
-              rows="5"
+              type="text"             
+              rows="7"
               required
             />
             <input
