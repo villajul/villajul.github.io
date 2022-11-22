@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.21685584.css",
+    "main.js": "/static/js/main.ef1ecbb6.js",
+    "static/js/787.30237536.chunk.js": "/static/js/787.30237536.chunk.js",
+    "static/media/PokemonApp.png": "/static/media/PokemonApp.a0a6ebdd7e6d9cdae38b.png",
+    "static/media/Portfolio.png": "/static/media/Portfolio.a58d56a2f0382283ac7b.png",
+    "static/media/Tecnomerch.png": "/static/media/Tecnomerch.9d7ec2f87fdb973b1ca3.png",
+    "static/media/R.jpg": "/static/media/R.5542136121a8712917ea.jpg",
+    "static/media/about.jpeg": "/static/media/about.174aad811797520c9c73.jpeg",
+    "static/media/header.png": "/static/media/header.6ab0423eb7b061008788.png",
+    "static/media/Cv.pdf": "/static/media/Cv.5b852a54de981e56e529.pdf",
+    "index.html": "/index.html",
+    "main.21685584.css.map": "/static/css/main.21685584.css.map",
+    "main.ef1ecbb6.js.map": "/static/js/main.ef1ecbb6.js.map",
+    "787.30237536.chunk.js.map": "/static/js/787.30237536.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21685584.css",
+    "static/js/main.ef1ecbb6.js"
+  ]
+}
