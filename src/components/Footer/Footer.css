@@ -1,0 +1,34 @@
+footer {
+  background: var(--color-primary);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+}
+footer a {
+  color: var(--color-background);
+}
+
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.permalinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.footer__copyright {
+  margin-bottom: 4rem;
+  color: var(--color-background);
+  font-weight: 700;
+  font-size: 1rem;
+}

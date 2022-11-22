@@ -1,8 +1,7 @@
 import React from "react";
-import Me from "../../assets/Me.jpeg";
-import Henry from "../../assets/logoHenry.png";
+import Me from "../../assets/about.jpeg";
 import { FaUsers, FaBookOpen } from "react-icons/fa";
-import "./About.css"
+import "./About.css";
 
 const About = () => {
   return (
@@ -12,34 +11,32 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={Me} alt="I_am" width="400px" />
+            <img src={Me} alt="I_am" className="img" />
           </div>
         </div>
-        <div className="about__content" >
+        <div className="about__content">
           <div className="about__cards">
-            
-          
-          <div className="about__card">
-            <img
-              src="https://assets.soyhenry.com/icons/favicon-32x32.png"
-              alt="Soy Henry"
-              className="about__icon"
-              height="32px"
-              width="32px"
-            />
-            <h5>Henry</h5>
-            <small>Full Stack Developer</small>
-          </div>
-          <div className="about__card">
-            <FaBookOpen className="about__icon" />
-            <h5>Extensive Knowledge</h5>
-            <small>Image and software design</small>
-          </div>
-          <div className="about__card">
-            <FaUsers className="about__icon" />
-            <h5>Soft Skills</h5>
-            <small>Git Flow, comunication, team work an more...</small>
-          </div>
+            <div className="about__card">
+              <img
+                src="https://assets.soyhenry.com/icons/favicon-32x32.png"
+                alt="Soy Henry"
+                className="about__icon "
+                height="32px"
+                width="32px"
+              />
+              <h5>Henry</h5>
+              <small>Full Stack Developer</small>
+            </div>
+            <div className="about__card">
+              <FaBookOpen className="about__icon" />
+              <h5>Extensive Knowledge</h5>
+              <small>Image and software design</small>
+            </div>
+            <div className="about__card">
+              <FaUsers className="about__icon" />
+              <h5>Soft Skills</h5>
+              <small>Git Flow, comunication, team work an more...</small>
+            </div>
           </div>
           <p>
             Full Stack Developer. Currently improving my skills with the
@@ -55,7 +52,6 @@ const About = () => {
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
-          
         </div>
       </div>
     </section>
