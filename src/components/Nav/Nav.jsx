@@ -9,6 +9,7 @@ const Nav = () => {
   const [active, setActive] = useState("");
   console.log(active);
   return (
+    <div>
     <nav>
       <a
         href="#"
@@ -51,6 +52,7 @@ const Nav = () => {
         {active === "#contact" ? <p>Contact</p> : null}
       </a>
     </nav>
+    </div>
   );
 };
 

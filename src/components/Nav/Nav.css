@@ -1,13 +1,14 @@
 nav {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  bottom: 5rem;
-  width: fit-content;
-  background: var(--color-backgroud-var);
-  border-radius: 2rem;
-  margin-left: 50%;
-  transform: translateX(-50%);
+    background: var(--color-backgroud-var);
+    border-radius: 2rem;
+    bottom: 3rem;
+    justify-content: center;
+    margin-left: 50%;
+    position: fixed;    
+    transform: translateX(-50%);  
+    width: fit-content;
+    z-index: 2;
+    display: flex;
 }
 nav a {
   background: transparent;
