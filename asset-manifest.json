@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.21685584.css",
-    "main.js": "/static/js/main.5d415b3d.js",
+    "main.css": "/static/css/main.0d5b521d.css",
+    "main.js": "/static/js/main.e284f42a.js",
     "static/js/787.30237536.chunk.js": "/static/js/787.30237536.chunk.js",
     "static/media/PokemonApp.png": "/static/media/PokemonApp.a0a6ebdd7e6d9cdae38b.png",
     "static/media/Portfolio.png": "/static/media/Portfolio.a58d56a2f0382283ac7b.png",
@@ -9,14 +9,14 @@
     "static/media/R.jpg": "/static/media/R.5542136121a8712917ea.jpg",
     "static/media/about.jpeg": "/static/media/about.174aad811797520c9c73.jpeg",
     "static/media/header.png": "/static/media/header.6ab0423eb7b061008788.png",
-    "static/media/Julio Villacorta.pdf": "/static/media/Julio Villacorta.92735e9d8f31c0fa35c5.pdf",
+    "static/media/Julio Villacorta.pdf": "/static/media/Julio Villacorta.ac7bcfc2eee84985ded7.pdf",
     "index.html": "/index.html",
-    "main.21685584.css.map": "/static/css/main.21685584.css.map",
-    "main.5d415b3d.js.map": "/static/js/main.5d415b3d.js.map",
+    "main.0d5b521d.css.map": "/static/css/main.0d5b521d.css.map",
+    "main.e284f42a.js.map": "/static/js/main.e284f42a.js.map",
     "787.30237536.chunk.js.map": "/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21685584.css",
-    "static/js/main.5d415b3d.js"
+    "static/css/main.0d5b521d.css",
+    "static/js/main.e284f42a.js"
   ]
 }
