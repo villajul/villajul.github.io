@@ -24,7 +24,7 @@ const Portfolio = () => {
               Github
             </a>
             <a
-              href="https://6evi.duckdns.org:1337/"
+              href="https://tecnomerch.christianvillegas.com/"
               target="_blanc"
               className="btn btn-primary"
             >
@@ -45,7 +45,13 @@ const Portfolio = () => {
             >
               Github
             </a>
-            {/* <a href="https://6evi.duckdns.org:1337/" target='_blanc' className="btn btn-primary">Live Demo</a> */}
+            <a
+              href="https://pokemon-client-ten.vercel.app/"
+              target="_blanc"
+              className="btn btn-primary"
+            >
+              Live Demo
+            </a>
           </div>
         </article>
         <article className="portfolio__item">
