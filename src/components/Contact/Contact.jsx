@@ -1,21 +1,48 @@
-import React, {useRef} from "react";
-import emailjs from 'emailjs-com'
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { useState } from "react";
 
 const Contact = () => {
   const form = useRef();
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    setInput({
+      ...input,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_c8oxpbb', 'template_qxz1xu4', form.current, '51QetQY_ta9BD2aOL')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_c8oxpbb",
+        "template_qxz1xu4",
+        form.current,
+        "51QetQY_ta9BD2aOL"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
+    setInput({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
@@ -41,12 +68,28 @@ const Contact = () => {
         </div>
         <div>
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name='name' placeholder="Your full name" required />
-            <input type="email" name='email' placeholder="Your e-mail" required />
+            <input
+              onChange={handleInputChange}
+              type="text"
+              value={input.name}
+              name="name"
+              placeholder="Your full name"
+              required
+            />
+            <input
+              onChange={handleInputChange}
+              type="email"
+              value={input.email}
+              name="email"
+              placeholder="Your e-mail"
+              required
+            />
             <textarea
-            name='message'
+              onChange={handleInputChange}
+              value={input.message}
+              name="message"
               placeholder="Your message"
-              type="text"             
+              type="text"
               rows="7"
               required
             />
