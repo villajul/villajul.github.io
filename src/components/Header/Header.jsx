@@ -1,7 +1,7 @@
 import React from "react";
 import CTA from "./CTA";
 import "./Header.css";
-import Me from "../../assets/header.png";
+import Me from "../../assets/header.jpg";
 import Social from "./Social";
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
         <h5 className="text-light">Fullstack Developer</h5>
         <CTA />
         <Social />
-        <div className="me">
+        <div className="me">          
           <img src={Me} alt="me" className="img mi" />
         </div>
         <a href="#contact" className="scroll__down">

@@ -1,19 +1,23 @@
 header {
   height: 100vh;
-  padding-top: 7rem;
+  width: 100vw;
+  padding-top: 3rem;
   overflow: hidden;
+  
 }
 .header__container {
   text-align: center;
   height: 100%;
   position: relative;
+  gap: 3rem; 
 }
 
 .cta {
   margin-top: 2.5rem;
   display: flex;
   gap: 1.2rem;
-  justify-content: center;
+  justify-content: center;  
+  padding: 1rem;
 }
 .header__social {
   display: flex;
@@ -32,15 +36,22 @@ header {
 }
 
 .me {
-  width: 24rem;
-  height: 41rem;
-  position: absolute;
-  left: calc(50% - 11rem);
-  margin-top: 4rem;
-  border-radius: 30rem 30rem;
-  background: linear-gradient(var(--color-primary), transparent);
-  overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ width: 20rem;
+ height: 20rem;  
+ margin: 0 auto; 
+ border-radius: 50%; 
+ overflow: hidden;
+}
+
+
+.me img{
+  border-radius: 50%;   
+  width: 19rem;
+ height: 19rem;  
 }
 .scroll__down {
   position: absolute;
@@ -51,10 +62,44 @@ header {
   font-size: 0.9rem;
 }
 
+.me::before{ 
+  content: "";
+  z-index: -1;
+  width: 22rem;
+ height: 22rem;  
+  position: absolute;
+ background: linear-gradient(120deg, var(--color-primary), var(--color-backgroud-var),var(--color-background), var(--color-white));
+ animation: me_gradient 5s linear infinite;
+ background-size: 300% ;
+}
+.me::after{ 
+  content: "";
+  z-index: -1;
+  width: 22rem;
+ height: 22rem;  
+  position: absolute;
+ background: linear-gradient(120deg, var(--color-primary), var(--color-backgroud-var),var(--color-background), var(--color-white));
+ animation: me_gradient 5s linear infinite;
+ background-size: 300% ;
+}
+
+@keyframes me_gradient {
+  0%{
+    background-position: 0% 200%;
+  }
+  50%{
+    background-position: 200% 0%;
+  }
+  100%{
+    background-position: 0% 330%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    height: 100vh;
   }
+  
 }
 @media screen and (max-width: 600px) {
   header {
@@ -64,4 +109,5 @@ header {
   .scroll__down {
     display: none;
   }
+ 
 }

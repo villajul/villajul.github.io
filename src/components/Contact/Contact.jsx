@@ -12,6 +12,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  console.log(form)
 
   const handleInputChange = (e) => {
     setInput({
